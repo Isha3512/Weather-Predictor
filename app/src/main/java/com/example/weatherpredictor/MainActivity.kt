@@ -74,8 +74,6 @@ class MainActivity : AppCompatActivity() {
                     val sunsetTime= findViewById<TextView>(R.id.TVsunsetValue)
                     val Pressure= findViewById<TextView>(R.id.tvPaValue)
                     val Visibilty= findViewById<TextView>(R.id.TVVisibilityValue)
-
-
                     val temperature = responseBody.main.temp.toString()
                     currTemp.text= "$temperature°C"
                     val maxTemperature= responseBody.main.temp_max.toString()
@@ -99,10 +97,6 @@ class MainActivity : AppCompatActivity() {
                     Pressure.text="$PaVAlue hPa"
                     val VisibilityValue= responseBody.visibility.toString()
                     Visibilty.text="$VisibilityValue m"
-
-
-
-
 
 
                     //Log.d("response","$feelsLike")
