@@ -90,9 +90,9 @@ class MainActivity : AppCompatActivity() {
                     val feelsLike = responseBody.main.feels_like.toString()
                     feelLike.text="Feels like $feelsLike°C"
                     val Sunrise= responseBody.sys.sunrise
-                    sunriseTime.text="${time(Sunrise)}"
+                    sunriseTime.text=time(Sunrise)
                     val Sunset= responseBody.sys.sunset
-                    sunsetTime.text="${time(Sunset)}"
+                    sunsetTime.text=time(Sunset)
                     val WeatherType=responseBody.weather[responseBody.weather.size-1].description.toString()
                     type.text=WeatherType.uppercase()
                     val PaVAlue=responseBody.main.pressure.toString()
